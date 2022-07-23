@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/img/img/odisha.png">
+    
+    <title>{% block title %} {% endblock title %} |Agriculture Department Govt. Of Uttarakhand</title>
+    
+    <!-- <link rel="stylesheet" href="/static/css/dash.css"> -->
+     <link rel="stylesheet" href="/static/css/FAQ.css">  
+    <!-- <link rel="stylesheet" href="/static/css/login.css"> -->
+    <!-- <link rel="stylesheet" href="/static/css/style (1).css"> -->
+    <!-- <link rel="stylesheet" href="/static/css/style.css">/ -->
+     
+
+</head>
+<body>
+    <!-- <div class="container"> -->
+    <div id="area">
+    <nav><a href="{% url 'home' %}">
+        <img src="/static/img/img/odisha.png" class="logo">
+        </a>
+        
+        <ul>
+            
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">Crop</a></li>
+            <li><a href="{% url 'services' %}">services</a></li>
+            <li><a href="{% url 'contact' %}">contact</a></li>
+            <li><a href="{% url 'faq' %}">Faq</a></li>
+
+        </ul>
+    </nav>
+</div>
+ 
+
+<div class="boxes">
+    <div id="box1">
+    <div class="asktext">Please Enter your Query here</div>
+    <div class="wrapper">
+        <div class="searchin">
+            <input type="text" placeholder="What can we help you with? ">
+            <div class="autocom-box" id="hid">
+                <li>Data1</li>
+                <li>Data2</li>
+                <li>Data3</li>
+                <li>Data4</li>
+            </div>
+        </div> 
+        
+        <div class="anspart">
+            <p id="ans">
+                Answers
+            </p>
+        </div>
+    </div>
+    </div>
+    
+
+    <div id="box2">
+        <div class="asktext2">Couldn't find what you're looking for<br>
+            Send us a message
+            <form action="#" class="write">
+                <br><input type="text" name="name" placeholder="Enter Your Name" class="formbox">
+                <br><input type="email" name="email" placeholder="Enter Your Email Address" class="formbox">
+                <br><input type="text" name="subject" placeholder="Enter Your Subject" class="formbox">
+                <br><input type="text" name="message" placeholder="Enter Your Message" class="messagebox">
+                <br><button type="submit" class="start">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% comment %} <section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-right">
+            <h3>OUR BRANCHES</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Andhra Pradesh</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Uttar Pradesh </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Haryana </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Punjab </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Assam </a>
+        </div>
+
+        <div class="box" data-aos="fade-down">
+            <h3>QUICK LINKS</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> services </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> about us</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> articles </a>
+        </div>
+        <div class="box" data-aos="fade-left">
+            <h3>SOCIAL LINKS</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i></a>
+            <a href="#"> <i class="fab fa-twitter"></i></a>
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+            <a href="#"> <i class="fab fa-linkedin"></i></a>
+            <a href="#"> <i class="fab fa-pinterest"></i></a>
+        </div>
+     
+    </div>
+    <h1>CopyRight &copy; 2022</h1>
+    </section> {% endcomment %}
+    </body>
+    </html>

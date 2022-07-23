@@ -1,0 +1,349 @@
+body
+{
+    margin: 0px;
+    background-color: rgb(130, 229, 31); 
+    color: rgb(255, 255, 255);
+}
+
+.faq
+{
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(124, 189, 59);
+}
+
+.asktext
+{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-left: 40px;
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.asktext2
+{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-left: 20px;
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+nav
+{
+    /*padding-top: 30px;
+    margin: 0px;
+    background-color: #fff;
+    border: none;
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+    font-family:Segoe UI Semibold,wf_segoe-ui_semibold,wf_segoe-ui_normal,Segoe UI,Segoe WP,Tahoma,Arial,sans-serif;
+    */
+    width: 100%;
+    padding: -9px 0%;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(255, 255, 255);
+
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+nav ul li{
+     list-style: none;
+    display: inline-block;
+    margin: 2rem;
+    position:relative;
+}
+nav ul  li a{
+    text-decoration: none;
+    color: rgb(124, 189, 59); 
+    width:100px;
+    display:block;
+    padding: 2px 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:Arial ;
+    /*font-size: 17px;*/
+    text-align: center;
+    
+}
+ul  li a:hover{
+    /* color: orangered; */
+    color:black;
+    margin-right: 10;
+
+}
+
+.wrapper
+{
+    max-width: 400px;
+    margin: 50px 100px auto;  /*box position*/
+}
+
+.wrapper .searchin
+{
+    background: rgb(236, 233, 233);
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.searchin input
+{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 40px 0 20px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.searchin input[type=text]:focus
+{
+    box-shadow: 0 0 8px rgb(22, 59, 13);
+}
+
+.searchin .autocom-box
+{
+    padding: 0px;
+    max-height: 100px;           /*data displayed size*/
+    overflow-y: auto ;
+    font-size: 19px;            /*text size of data*/
+    opacity: 0;                 /*data contents hidden*/
+    pointer-events: none;
+}
+
+.searchin.active .autocom-box
+{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+    color: black;
+}
+
+.autocom-box li
+{
+    list-style: none;
+    padding: 5px 10px;
+    width: 100%;
+    cursor: default;
+    border-radius: 2px;
+    display: none;
+}
+
+.searchin.active .autocom-box li
+{
+    display: block;
+}
+
+.autocom-box li:hover
+{
+    background: #c9c1c1;
+    
+}
+
+.wrapper p
+{
+    font-size: 20px;
+}
+
+#ans
+{
+    opacity: 0;
+}
+
+.boxes
+{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+#box1
+{
+    width: 45%;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 190px;
+    padding-top: 5px;
+    padding-bottom: 110px;
+    padding-left: 30px;
+    box-shadow: 2px 2px 5px 3px rgba(0.1, 0.1, 0.1, 0.1);
+    background-color: rgb(56, 180, 50);
+}
+
+#box2
+{
+    width: 45%;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 190px;
+    padding-top: 5px;
+    padding-bottom: 110px;
+    padding-left: 30px;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 90, 0.1);
+    border-top: 0px;
+    background-color: rgb(56, 180, 50);
+}
+
+.start
+{
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+    font-size: medium;
+    box-shadow: 2px 2px 5px 3px rgba(0.1, 0.1, 0.1, 0.1);
+    border: #c9c1c1;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+
+.write
+{
+    opacity: 1;
+    
+}
+
+.formbox
+{
+    width: 400px;
+    height: 30px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+
+
+}
+
+.messagebox
+{
+    width: 400px;
+    height: 100px;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+    margin-left: 20px;
+
+}
+.footer{
+    background:black;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap:10rem;
+}
+.footer h1{
+    color: white;
+    font-size: small;
+}
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color:grey;
+    padding:1rem 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.footer .box-container .box a{
+    font-size: 1rem;
+    color:grey;
+    padding:1rem 0;
+    display: block;
+}
+
+.footer .box-container .box a:hover{
+    color:white;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--main-color);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+    color:white;
+}
+
+.footer .credit{
+    padding:1rem;
+    padding-top: 2.5rem;
+    margin-top: 2.5rem;
+    border-top:.1rem solid white;
+    font-size: 2rem;
+    color:lawngreen;
+    text-align: center;
+}
+
+.footer .credit span{
+    color:var(--main-color);
+} 
+/* new */
+.fab {
+    padding: 5px;
+    font-size: 20px;
+    width:35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    /* border-radius: 50%; */
+  } 
+  
+  .fab:hover {
+      opacity: 1.0;
+  }
+  
+  .fa-facebook-f {
+    background:blue;
+    color: blue;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  
+  .fa-instagram {
+    background: rgb(159, 5, 31);
+    color: white;
+  }
+  
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }

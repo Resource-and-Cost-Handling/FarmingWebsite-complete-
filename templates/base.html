@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/img/img/odisha.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <title>{% block title %} {% endblock title %} |Agriculture Department Govt. Of Uttarakhand</title>
+    <link rel="stylesheet" href="/static/css/loginhome.css">
+   
+     
+
+</head>
+<body>
+    <!-- <div class="container"> -->
+    <div id="area">
+    <nav><a href="{% url 'home' %}">
+        <img src="/static/img/img/odisha.png" class="logo">
+        </a>
+        
+        <ul>
+            
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">Crop</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="{% url 'faq' %}">FAQ's</a></li>
+
+        </ul>
+    </nav>
+</div>
+ 
+
+    {% block body%} {% endblock body%}
+    
+    </div>
+
+
+    <section class="footer" id="footer">
+
+        <div class="box-container">
+    
+            <div class="box" data-aos="fade-right">
+                <h3>OUR BRANCHES</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Andhra Pradesh </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Uttar Pradesh</a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Haryana </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Punjab </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Assam </a>
+            </div>
+    
+            <div class="box" data-aos="fade-down">
+                <h3>QUICK LINKS</h3>
+                <a href="{% url 'home' %}"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="{% url 'about' %}"> <i class="fas fa-arrow-right"></i> services </a>
+                <a href="{% url 'services' %}"> <i class="fas fa-arrow-right"></i> about us</a>
+                <a href="{% url 'contact' %}"> <i class="fas fa-arrow-right"></i> articles </a>
+                <a href="{% url 'faq' %}"> <i class="fas fa-arrow-right"></i> articles </a>
+            </div>
+            <div class="box" data-aos="fade-left">
+                <h3>SOCIAL LINKS</h3>
+                <a href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/i/flow/login"> <i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/home"> <i class="fab fa-linkedin"></i></a>
+                <a href="https://in.pinterest.com/"> <i class="fab fa-pinterest"></i></a>
+            </div>
+        
+        </div>
+        <h1>CopyRight &copy; 2022</h1>
+        
+    </section>
+    <!-- footer section ends -->
+        <script>
+            var blurArea = document.getElementById("blur-area");
+    
+            document.onmousemove = function(e){
+                blurArea.style.transform = `translate(${e.pageX}px, ${e.pageY}px)`;  
+            }
+        
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 4000); // Change image every 4 seconds
+            }
+            </script>
+    </body>
+    </html>

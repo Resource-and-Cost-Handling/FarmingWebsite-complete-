@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.sub-nav{
+    /* max-width: 1000px; */
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    background-color:green;
+    box-shadow: 5px 5px 5px;
+    margin-bottom: 55px;  
+    padding-top: 100px; 
+    /* color: white; */
+}
+
+.container
+{
+    top: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-top: 20px; 
+      /* position: sticky;  */
+      
+}
+ /* header{
+    position:fixed;
+  } */
+
+.navbar
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    background-color: rgb(255, 255, 255);
+     position: fixed;  
+     top:0;
+     z-index: 5;
+}
+/* nav{
+    position:fixed;
+} */
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+#menubar
+{
+    display: none;
+}
+
+.menu-icon
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#menulist
+ {
+    visibility: visible;
+ }
+
+.navbar nav
+{
+    flex: 1;
+    text-align: right;
+    /* position: relative;  */
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin: 2rem;
+    position:relative;
+    justify-content: flex-end;
+}
+
+nav ul  li a{
+    text-decoration: none;
+    color: rgb(124, 189, 59); 
+    width:100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:Arial ;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 17px;
+    
+}
+
+nav ul  li a:hover
+{
+    color: black;
+}
+
+.picrow
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background:linear-gradient(to right,rgb(167, 187, 51),rgb(0, 94, 0));
+    margin-top: 2%;
+}
+
+.picrow a
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cname
+{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+}
+
+.croppics
+{
+    width: 420px;
+    height: 320px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    cursor: pointer;
+    box-shadow: 0;
+    transition: transform 0.8s;
+    transition: box-shadow 0.5s;
+}
+
+
+.croppics:hover
+{
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px 10px rgba(0.7, 0.7, 0.7, 0.5);
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px)
+{
+    .container
+    {
+        padding-top: 0;
+    }
+
+    .menu-icon
+    {
+        visibility: initial;
+    }
+
+    nav ul
+    {
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 2;
+        background-color: rgb(224, 223, 223);
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    nav ul li
+    {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background: rgb(224, 223, 223);
+    }
+
+    nav ul li a
+    {
+        color: rgb(0, 94, 0); 
+    }
+    
+
+    .croppics
+    {
+        width: 260px;
+        height: 160px;
+        border-radius: 3px;
+    }
+
+    .cname
+    {
+        font-size: 20px;
+    }
+
+    .menu-icon
+    {
+        display: block;
+        padding-right: 15px;
+        cursor: pointer;
+    }
+
+    #menubar
+    {
+        display: block;
+    }
+
+    #menulist
+    {
+        visibility: collapse;
+        transition: 0.15s;
+    }
+
+    #photorow
+    {
+        margin-top: 100px;
+        transition: 0.36s;
+        overflow: hidden;
+    }
+
+
+}
+.footer{
+    background:black;
+    /* display: flex; */
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap:10rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color:grey;
+    padding:1rem 0;
+}
+
+.footer .box-container .box a{
+    font-size: 1rem;
+    color:grey;
+    padding:1rem 0;
+    display: block;
+}
+
+.footer .box-container .box a:hover{
+    color:white;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--main-color);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+    color:white;
+}
+
+.footer .credit{
+    padding:1rem;
+    padding-top: 2.5rem;
+    margin-top: 2.5rem;
+    border-top:.1rem solid white;
+    font-size: 2rem;
+    color:lawngreen;
+    text-align: center;
+}
+
+.footer .credit span{
+    color:var(--main-color);
+}
